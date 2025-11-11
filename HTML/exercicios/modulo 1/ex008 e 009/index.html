@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de formatação</title>
+    <style>
+        body {
+            background-color: rgb(172, 171, 171);
+        } 
+    </style> <!--Essa tag serve para mudar a cor de fundo do site com CSS-->
+
+    <!--<style>
+        mark {
+            background-color: red;
+        } 
+            *Essa tag serve para mudar a cor de todas as marcações de texto que foram adicionadas.*
+    </style>-->
+</head>
+<body>
+    <h1>Principais formatações em textos:</h1>
+    <hr>
+    <h2>Textos em negrito ou em destaque</h2>
+    <p>
+        Nessa frase é utilizado <b>negrito</b> a partir do uso da tag &lt;b&gt; e &lt;/b&gt;. Ela não é uma tag semântica.
+    </p>
+    <p>
+        Nessa frase agora é utilizado <strong>destaque ou negrito</strong> a partir do uso da tag &lt;strong&gt; e &lt;/strong&gt;. Essa é uma tag semântica para usar em HTML5.
+    </p>
+    <h2>Textos em itálico ou ênfase</h2>
+    <p>
+        Nessa frase estou utlizando o <i>texto em itálico</i> com a tag &lt;i&gt; e &lt;/i&gt;. Essa é a forma não semântica dele.
+    </p>
+    <p>
+        Nessa frase agora foi utilizado o <em>texto em ênfase ou itálico</em> usando a tag &lt;em&gt; e &lt;/em&gt;. Essa é a forma semântica.
+    </p>
+    <h2>Textos com marcação</h2>
+    <p>
+        Nessa frase foi utilizado a <mark>marcação de textos</mark> utlizando a tag &lt;mark&gt; e &lt;/mark&gt;.
+    </p>
+    <p>
+        Para mudar a cor da marcação, é usado CSS com o parâmetro style dentro da tag &lt;mark&gt; e com o tipo background-color.
+    </p>
+    <p>
+        Exemplo: <br>
+        A marcação do texto <mark style="background-color: rgb(255, 0, 0);">agora está com uma cor diferente graças ao CSS.</mark>
+    </p>
+    <p>
+        Para deixar todos textos marcados, usa a tag style na parte de head do html junto com o mark e background-color para deixar todos com essa cor
+    </p>
+    <h2>Textos maiores e menores</h2>
+    <p>
+        Algumas tags podem <big>aumentar</big> ou <small>diminuir</small> o tamanho dos textos. Apesar de que a tag &lt;big&gt; está em desuso, enquanto a tag &lt;small&gt; ainda é comumente usada.
+    </p>
+    <h2>Texto deletado</h2>
+    <p>
+        Antigamente era utilizado a tag <strike>strike</strike> para deixar o texto em formato deletado. A forma &lt;strike&gt; e &lt;/strike&gt; não é semântica e é pouco usada.
+    </p>
+    <p>
+        Já a tag <del>del como nova</del> pode ser usada normalmente usando a tag &lt;del&gt; e &lt;/del&gt;. Essa forma é semântica.
+    </p>
+    <h2>Texto inserido ou sublinhado</h2>
+    <p>
+        Usando a tag antiga <u>u, o texto</u> fica inserido, mas a forma &lt;u&gt; e &lt;/u&gt; não é semântica.
+    </p>
+    <p>
+        Já a tag nova <ins>ins, deixa o texto</ins> também sublinhado, mas de forma semântica com &lt;ins&gt; e &lt;/ins&gt;.
+    </p>
+    <h2>Textos subescritos e supescritos</h2>
+    <p>
+        Para fazer textos químicos e matemáticos como x<sup>2</sup> é utilizado a tag &lt;sup&gt; e &lt;/sup&gt;.
+    </p>
+    <p>
+        Para fazer textos como H<sub>2</sub>O em química, é utilizado a tag &lt;sub&gt; e &lt;/sub&gt;.
+    </p>
+    <h2>Exemplos para códigos</h2>
+    <p>Para ajudar programadores em ler mais facilmente os códigos de outro programa, é utilizado a tag &lt;code&gt; e &lt;/code&gt;.</p>
+    <p>
+        O texto vai ficar mais ou menos assim: <br>
+    <code>int main() <br>
+{ <br>
+    int num; <br>
+    
+    printf("Escolha um número: "); <br>
+    scanf("%d",&num); <br>
+    
+    if(num % 2 == 0) <br>
+    { <br>
+        printf("seu número é par.\n"); <br>
+    } <br>
+    else <br>
+    { <br>
+        printf("seu número é impar.\n"); <br>
+    } <br>
+    
+    return 0; <br>
+} <br>
+
+    </code>
+    </p>
+    <p> Pode usar a tag &lt;pre&gt; e &lt;/pre&gt; para deixar o texto da mesma forma que ele foi digitado, com todas as quebras de linha. Ele fica assim: <br>
+    <pre><code>
+    int main()
+{
+int num;
+    
+printf("Escolha um número: ");
+    scanf("%d",&num);
+    
+if(num % 2 == 0)
+{
+    printf("seu número é par.\n");
+}
+else
+{
+    printf("seu número é impar.\n");
+}
+    
+return 0;
+}
+    </code></pre>
+    </p>
+    <h2>Textos em citação</h2>
+    <p>
+        Para criar uma citação de texto usa o <q>q para deixar o texto entre aspas</q>, utilizando o &lt;q&gt; e &lt;/q&gt;. Ele não fica com deslocamento desse jeito.
+    </p>
+    <p>
+        para ter deslocamento é usado o <blockquote>blockquote para deixar um bloco deslocado no texto</blockquote>, usando a tag &lt;blockquote&gt; e &lt;/blockquote&gt;.
+    </p>
+    <h2>Textos com abreviações</h2>
+    <p>
+        Para usar textos com abreviações é usada a tag &lt;abbr&gt; e &lt;/abbr&gt; para mostrar o nome completo da abreviação citada. <br>
+        Exemplo: Eu estudo <abbr title="Hyper Text Markup Language">HTML</abbr>.
+    </p>
+    <h2>Textos invertidos</h2>
+    <p>
+        Use as tag &lt;bdo&gt; e &lt;/bdo&gt; para deixar o texto invertido. Use tbm o parâmetro dir para indicar a direção do texto invertido, como rtl (da direita para a esquerda) ou ltr (da esquerda para a direita).
+    </p>
+    <p>Exemplo: <br>
+        <bdo dir="rtl">O texto está da direita para a esquerda</bdo>
+    </p>
+    <p>Exemplo 2: <br>
+        <bdo dir="ltr">O texto está da esquerda para a direita</bdo>
+    </p>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes externas</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&display=swap');
+
+        /*
+        Caso suas fontes sejam baixadas em arquivo OTF ou TTF:
+
+            crie a regra @font-face
+                adicione a url do arquivo
+
+            Coloque o nome da font-family ao seu gosto
+
+            adicione o parâmetro format()
+
+            tipos de format:
+                -opentype(otf)
+                -truetype(ttf)
+                -embedded-opentype
+                -truetype-aat(Apple Advanced Typography)
+                -svg
+        */
+
+        body {
+            font: 1em arial, helvetica, sans-serif;
+        }
+
+        h1 {
+            font-size: 2em;
+            font-family: "BBH Sans Bartle", sans-serif;
+            font-weight: 400;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes externas</h1>
+    <h2>Usando o google fonts</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem magnam praesentium neque quas dolore eos enim aperiam fugiat vero sed officiis, corporis in deleniti! Tempora dolorum porro architecto earum aliquid! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit quo excepturi atque unde voluptatibus, sapiente ut dolores nihil dicta quis iure, magni id ex praesentium. Blanditiis vero veniam voluptatum dicta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi a impedit esse possimus quas praesentium harum hic fugit delectus aspernatur atque ut omnis non, cupiditate culpa rerum dicta quo nisi!
+    </p>
+    
+</body>
+</html>

@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+/* Exemplo de config */
+
+body {
+    background-color: #333333;
+    margin: 0px;
+}
+
+header{
+    background-color: white;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+}
+
+header > h1 {
+    font-weight: bolder;
+    text-shadow: 1px 1px 2px #333333;
+}
+
+nav {
+    background-color: lightgray;
+    padding: 3px;
+    margin: 0px 5px 7px 5px;
+    box-shadow: 3px 3px 5px #333333;
+}
+nav > a {
+    color: black;
+    text-decoration: none;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+nav > a:hover {
+    color: white;
+    text-decoration: underline; 
+}
+
+main {
+    background-color: lightgray;
+    margin: 35px 10px 35px 10px;
+    padding: 10px;
+}
+
+section {
+    background-color: white;
+    padding: 3px;
+}
+
+article {
+    background-color: gray;
+}
+article > p {
+    text-align: justify;
+    text-indent: 15px;
+}
+article > aside {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: black;
+    padding: 10px 0px 0px 0px;
+}
+main > aside {
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 3px;
+    margin: 5px 0px 2px 0px;
+    color: white;
+    text-indent: 15px;
+}
+footer {
+    height: 100px;
+    background-color: white;
+    margin: 25px 0px 10px 0px;
+    text-align: center;
+}
+
+#ball {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+}

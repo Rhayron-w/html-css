@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+body {
+    background-color: wheat;
+
+    font-family: Arial, Helvetica, sans-serif;
+    /*background-image: linear-gradient ou radial-gradient(90deg ou circle, red, yellow); */
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: red;
+}
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    color: orange;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    font-style: italic;
+    font-weight: bold;
+}
+        

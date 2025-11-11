@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+body{
+    background-color: lightgray;
+}
+
+#principal{
+    background-color: black;
+    color:lightgray;
+    text-align: center;
+}
+
+h2{
+    text-align: right;
+}
+
+.texto{
+    color: rgb(92, 92, 92);
+    font-style: italic;
+    text-align: justify;
+}

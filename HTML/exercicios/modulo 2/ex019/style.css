@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+body{
+    background-color: #333333;
+}
+
+h1{
+    text-align: center;
+    width: 300px;
+    height: 50px;
+    background-color: lightgray;
+    border: 10px solid red;
+    padding: 20px;
+    outline: 30px solid blue;
+    margin: auto; /* auto em margin faz com que o navegador calcule automaticamente as margens a esquerda e a direita do site, colocando o bloco assim, no meio centralizado
+    */
+}
+/*
+    tipos para padding e margin:
+    
+    [margin ou padding] -top (topo)
+    [margin ou padding] -right (esquerda)
+    [margin ou padding] -bottom (fundo)
+    [margin ou padding] -left (esquerda)
+
+    SHORTHANDS
+
+    padding ou margin: 10px 15px 20px 25px; (conta: 10px-top, 15px-right, 20px-bottom, 25px-left)
+    sempre: cima
+            direita
+            baixo
+            esquerda
+    
+    ou
+
+    padding ou margin: 10px 20px; (10px ja conta com top e bottom e 20px ja conta right e left)
+*/
