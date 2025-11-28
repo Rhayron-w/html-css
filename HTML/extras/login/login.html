@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,1,0">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <script src="https://unpkg.com/akar-icons-fonts"></script>
+</head>
+<body>
+    <div class="container-principal"> <!--Tudo está dentro desse container-->
+        <!--Inicio da configuração da barra lateral-->
+        <ul class="navegacao-container">
+            <!--Logo lateral-->
+            <li>
+                <img src="image/logo.svg" alt="logo">
+                <span class="barra-ativa"></span>
+            </li>
+
+            <!--Botão Entrar-->
+            <li>
+                <button type="button" class="entrar-ativo" onclick="selectView('entrar')"> <!--O selectView chama o javaScript-->
+                    <i class="ai-person-check"></i>
+                    <span>Entrar</span>
+                </button>
+            </li>
+
+            <!--Botão Inscrever-->
+            <li>
+                <button type="button" class="inscrever" onclick="selectView('inscrever')"> <!--O selectView chama o javaScript-->
+                    <i class="ai-person-add"></i>
+                    <span>Inscrever</span>
+                </button>
+            </li>
+        </ul>
+
+        <!--Área de Informações-->
+        <div class="container-informacoes">
+            <div class="container-info-interno">
+
+                <!--Imagem Entrar-->
+                <div class="container-info-conteudo">
+                    <h1>Bem-Vindo(a)</h1>
+                    <h2>Entre com seus dados</h2>
+                    <img src="image/signin.svg" alt="Entrar">
+                </div>
+
+                <!--Imagem Inscrever-->
+                <div class="container-info-inscrever">
+                    <h1>Inscreva-se agora</h1>
+                    <h2>Informe seus dados e começe agora</h2>
+                    <img src="image/signup.svg" alt="Inscrever">
+                </div>  
+            </div>
+        </div>
+
+        <!--Área de formulários-->
+        <div class="container-formulario">
+            <div class="formularios">
+
+                <!--Formulário de Entrar(Login)-->
+                <form id="entrar-form" class="ativo">
+                    <p>Não tem uma conta? <a>Inscreva-se</a>.</p>
+                    <label>Email</label>
+                    <div class="controle">
+                        <input type="email" placeholder="seu.email@gmail.com">
+                        <i class="ai-envelope"></i>
+                    </div>
+                    <label>Senha</label>
+                    <div class="controle">
+                        <input type="password" placeholder="**********">
+                        <i class="ai-lock-on"></i>
+                    </div>
+                    <button>ENTRAR</button>
+                    <p class="rodape">Clicando em entrar você concorda com nossos termos e condições, política de privacidade e regras de reutilização.
+                    </p>
+                </form>
+
+                <!--Formulário de inscrição (Cadastro)-->
+                <form id="inscrever-form">
+                    <p>Já tem uma conta? <a>Entrar</a>.</p>
+                    <label>Nome de usuário</label>
+                    <div class="controle">
+                        <input type="text" placeholder="meu nome de usuário">
+                        <i class="ai-person"></i>
+                    </div>
+                    <label>Email</label>
+                    <div class="controle">
+                        <input type="email" placeholder="seu.email@gmail.com">
+                        <i class="ai-envelope"></i>
+                    </div>
+                    <label>Senha</label>
+                    <div class="controle">
+                        <input type="password" placeholder="**********">
+                        <i class="ai-lock-on"></i>
+                    </div>
+                    <button>Inscrever-se</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

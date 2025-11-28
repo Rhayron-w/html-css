@@ -1,0 +1,237 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --cor-primaria: #4672ff;
+    --cor-escura: #2646ad;
+    --cor-mutada: #747b92;
+
+    --font1: "Poppins", sans-serif;
+}
+* {
+    box-sizing: border-box; /* Garante que o padding e border não aumentem nem diminua o tamanho dos elementos */
+    /* EXEMPLO: width: 100px, ele continuará com 100px mesmo com pedding */
+}
+
+body {
+    margin: 0px;
+    background-color: #f0f7ff;
+    color: #abaab8;
+    height: 100vh;
+    display: grid; /* O grid e o place-items centraliza tudo no meio da tela */
+    place-items: center; /* Centraliza vertical e horizontalmente tudo dentro do body */
+    overflow: hidden; /* Impede rolagem do site */
+    font-family: var(--font1);
+}
+
+ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+input, button {
+    font-family: inherit; /* O input e color herdam a fonte e as cores do body*/
+    color: inherit;
+}
+
+button {
+    padding: 0px;
+    cursor: pointer; /* Mostra o cursor de clique */
+}
+
+p {
+    font-size: 12px;
+}
+
+    p .rodape {
+        opacity: 0.75;
+    }
+
+p a {
+    color: var(--cor-primaria);
+}
+
+.container-principal { /* Caixa branca principal */
+    display: flex; /* Layout se organiza em linha */
+    align-content: stretch; /* Faz o conteúdo dentro do container (filho) ocupar toda a altura possível */
+    width: 660px;
+    height: 360px;
+    background-color: #ffffff;
+    box-shadow: 0px 12px 80px rgba(95, 98, 255, 0.08);
+}
+
+.navegacao-container { /* Barra lateral de navegação */
+    position: relative; /* Permite posicionar a barra azul dentro dele */
+    align-self: stretch;
+    display: flex;
+    flex-direction: column; /* Coloca os itens em coluna */
+    justify-content: center;
+    width: 148px;
+}
+    .navegacao-container .barra-ativa { /* Barra azul que se move */
+        position: absolute; /* Pode se mover livremente dentro do menu */
+        top: 33.33%;
+        left: 0px;
+        width: 5px;
+        height: 33.33%;
+        background-color: var(--cor-primaria);
+        transition: 0.4s ease-in-out;
+    }
+
+    .navegacao-container li {
+        flex: 1 1 auto; /* 3 Propriedades: flex: 1 = flex-grow(Permite que o li cresça e ocupe o espaço total disponível. Resultado: Todos os li crescem igualmente, ficando do mesmo tamanho vertical)
+        1 = flex-shrink(Permite que o item reduza seu tamanho caso o espaço diminua)
+        auto = flex-basis(Cada item da lista ocupa alturas iguais automaticamente) */
+        display: grid;
+        place-items: center; /* Atalho para align-itens: center e justify-itens: center */
+    }
+
+    .navegacao-container li button:active {
+        color: var(--cor-escura);
+    }
+
+    .navegacao-container button {
+        background-color: transparent;
+        border: 0px;
+        display: flex; /* Alinha ícone com o texto */
+        flex-direction: column; /* Deixa o ícone em cima e o texto embaixo */
+        gap: 6px;
+        align-items: center; /* Alinha horizontal */
+        justify-content: center; /* Alinha vertical */
+        width: 100%;
+        height: 100%;
+        transition: 0.3s;
+    }
+
+    .navegacao-container button:not(:active):hover { /* Botão escurece ao passar o mouse por cima */
+        opacity: 0.675;
+        color: var(--cor-escura);
+    }
+
+    .navegacao-container button i {
+        font-size: 20px;
+    }
+
+.container-informacoes { /* Área de informações (parte das imagens) */
+    position: relative;
+    display: flex; 
+    flex-direction: column; /* Organiza a imagem e os textos verticalmente */
+    justify-content: flex-end; /* Empurra o conteúdo para baixo */
+    margin: -48px 0px;
+    flex: 0 0 300px;
+    overflow: hidden;
+    background-color: var(--cor-primaria);
+}
+
+    .container-informacoes h1 {
+        color: #f9f9f9;
+        margin: 0px 0px 2px;
+    }
+
+    .container-informacoes h2 {
+      color: #f9f9f9;
+      opacity: 0.75;  
+      font-size: 13px;
+    }
+
+    .container-informacoes img {
+        width: 100%;
+    }
+
+.container-info-interno { /* Container que desliza */
+    position: absolute; /* Permite mover de Entrar para inscrever */
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    transition: 0.5s ease-in-out;
+}
+
+.container-info-conteudo {
+    height: 456px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1, h2 {
+    text-align: left;
+    font-weight: 400;
+    margin: 0px;
+    padding-left: 24px;
+}
+
+.container-formulario { /* Container do formulário */
+    /* Aqui os formulários ficam empilhados */
+    position: relative; 
+    overflow: hidden;
+    padding: 24px;
+    width: 400px;
+}
+    .container-formulario form > button { /* Botão principal */
+        height: 40px;
+        padding: 12px 20px;
+        border-radius: 6px;
+        color: #f9f9f9;
+        margin-top: 12px;
+        background-color: var(--cor-escura);
+    }
+
+    .container-formulario .formularios { /* Parte do formulário que se move */
+        position: absolute;
+        height: 200%;
+        left: 0px;
+        top: 0px;
+        transition: 0.5s ease-in-out;
+    }
+
+    .container-formulario form { /* Estilo do formulário */
+        height: 360px;
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .container-formulario label {
+        font-size: 13px;
+        color: var(--cor-mutada);
+    }
+
+.controle { /* Campos e ícones */
+    position: relative; /* Coloca o ícone dentro do input */
+}
+
+    .controle input { /* Estilo do input */
+        background-color: transparent;
+        border: 1px solid #dad8e7;
+        border-radius: 6px;
+        width: 100%;
+        height: 40px;
+        padding: 0px 12px;
+    }
+
+        .controle input:focus {
+            outline-color: var(--cor-primaria);
+        }
+
+        .controle input::placeholder {
+            color: #bdbcd2;
+        }
+
+        .controle input:focus ~ i { /* Ícone muda de cor quando o input é selecionado */
+            color: var(--cor-escura);
+        }
+
+    .controle i { /* ícone dentro do input */
+    /* Essas configurações fazem o ícone ficar a direita da caixa */
+        color: var(--cor-mutada); 
+        position: absolute;
+        top: 50%;
+        right: 12px;
+        translate: 0 -50%;
+        transition: 0.3s;
+    }
