@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(120deg, rgb(59, 59, 236), rgb(78, 151, 175), cyan);
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    width: 400px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(13px);
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px 35px;
+}
+    .container h1 {
+        font-size: 2.5em;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .caixa-texto {
+        position: relative;
+        width: 100%;
+        height: 55px;
+        margin: 30px 0px;
+    }
+
+        .caixa-texto input {
+            background-color: transparent;
+            width: 100%;
+            height: 100%;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: 30px;
+            padding: 20px 45px 20px 20px;
+            font-size: 1em;
+        }
+            
+            input::placeholder {
+                color: white;
+            }
+        
+            .caixa-texto i {
+                position: absolute;
+                transform: translate(-50%);
+                top: 25%;
+                right: 15px;
+            }
+
+    .lembrar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: -16px 0px 16px;
+    }
+
+        .lembrar label input {
+            accent-color: white;
+            margin-right: 4px;
+        }
+
+    .botao a {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .botao a i {
+        font-size: 20px;
+        margin-right: 8px;
+    }
+        .botao a:hover {
+            opacity: 0.8;
+        }
+
+    input[type = "checkbox"] {
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        cursor: pointer;
+    }
+
+        input::-ms-reveal, input::-ms-clear {
+            display: none;
+        }
+
+        input::-webkit-credentials-auto-fill-button, input::-webkit-clear-button, input::-webkit-inner-spin-button,
+        input::-webkit-contacts-auto-fill-button {
+            display: none !important;
+            visibility: hidden !important;
+            pointer-events: none;
+            height: 0px;
+            width: 0px;
+            margin: 0px;
+            padding: 0px;
+        }
+        
+    .btn {
+        display: inline-block;
+        background-color: white;
+        color: #0a2862;
+        width: 100%;
+        border-radius: 30px;
+        font-size: 1em;
+        height: 45px;
+        font-weight: 600;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        margin-bottom: 30px;
+        margin-top: 16px;
+    }
+
+    .botao {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        text-align: center;
+    }
