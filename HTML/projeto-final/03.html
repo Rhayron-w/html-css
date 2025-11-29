@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Genéricos - Farmácia Digi+</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="03.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-top container">
+            <div class="logo">
+                <span class="brand">Farmácia Digi+</span>
+            </div>
+
+            <div class="search-wrap">
+                <input id="searchBar" type="search" placeholder="Pesquisar na Digi+" aria-label="Pesquisar produtos na Farmácia Digi+">
+            </div>
+
+            <div class="header-icons">
+                <a href="08.html" aria-label="Minha Conta"><i class="fa-regular fa-user"></i></a>
+                <a href="#" aria-label="Carrinho de Compras"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </div>
+
+        <nav class="main-nav">
+            <ul class="container">
+                <li><a href="02.html">Medicamentos</a></li>
+                <li class="active"><a href="#">Genéricos</a></li>
+                <li><a href="04.html">Mamãe &amp; Bebê</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <aside>
+            <h2>Filtros</h2>
+
+            <div class="filter-group">
+                <label for="sortSelect">Ordenar por:</label>
+                <select id="sortSelect">
+                    <option value="popularidade">Popularidade</option>
+                    <option value="precoAsc">Preço: menor para maior</option>
+                    <option value="precoDesc">Preço: maior para menor</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <div class="filter-group">
+    <p class="filter-title">Faixa de preço:</p>
+    
+    <label><input type="radio" name="price" value="all" checked data-min="0" data-max="9999"> Todos</label>
+    
+    <label><input type="radio" name="price" value="0-10" data-min="3.99" data-max="4.99"> R$3,99 - R$4,99</label>
+    
+    <label><input type="radio" name="price" value="10-20" data-min="5.40" data-max="5.99"> R$5,40 - R$5,99</label>
+    
+    <label><input type="radio" name="price" value="20-30" data-min="6.00" data-max="15.50"> R$6,00 - R$15,50</label>
+</div>
+            </div>
+        </aside>
+
+        <section id="productGrid"></section>
+    </main>
+
+    <footer>
+        <div class="newsletter container">
+            <div class="newsletter-text">
+                <strong>Inscreva-se e fique por dentro de todas as novidades!</strong>
+            </div>
+
+            <form id="newsletterForm" class="newsletter-form">
+                <input type="text" name="name" placeholder="Digite seu nome" required>
+                <input type="email" name="email" placeholder="Seu melhor email" required>
+                <button type="submit">receber novidades</button>
+            </form>
+        </div>
+
+        <div class="footer-columns container">
+            <div>
+                <h4>Institucional</h4>
+                <ul>
+                    <li><a href="#">Quem somos</a></li>
+                    <li><a href="#">Ações sociais</a></li>
+                    <li><a href="#">Políticas de privacidade</a></li>
+                    <li><a href="#">Termos e condições</a></li>
+                    <li><a href="#">Parcerias de entregas</a></li>
+                    <li><a href="#">Nosso blog</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Central de ajuda</h4>
+                <ul>
+                    <li><a href="#">Atendimento</a></li>
+                    <li><a href="#">Como comprar</a></li>
+                    <li><a href="#">Frete e prazo</a></li>
+                    <li><a href="#">Troca e devolução</a></li>
+                    <li><a href="#">Ouvidoria</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Minha conta</h4>
+                <ul>
+                    <li><a href="#">Dados pessoais</a></li>
+                    <li><a href="#">Favoritos</a></li>
+                    <li><a href="#">Meus pedidos</a></li>
+                </ul>
+            </div>
+
+            <div class="download-app">
+                <h4>Baixe nosso app</h4>
+                
+                <img 
+                    src="images/qrcode_azul.png" 
+                    alt="Código QR para baixar nosso aplicativo" 
+                    class="qr-code-footer"
+                >
+            </div>
+
+            <div>
+                <h4>Rede Sociais</h4>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <p class="copyright container">&copy; 2025 Farmácia Digi+</p>
+    </footer>
+
+    <script src="javascript.js"></script>
+</body>
+</html>

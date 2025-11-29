@@ -1,0 +1,186 @@
+/* =========================================
+   1. RESET E CONFIGURAÇÕES GERAIS
+   ========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fffcfc; /* Fundo levemente rosado/branco como na imagem */
+    color: #333;
+}
+
+/* Container centralizador do conteúdo do formulário */
+.container {
+    width: 100%;
+    max-width: 500px; /* Limita a largura para não esticar demais em telas grandes */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* =========================================
+   2. CABEÇALHO (HEADER AZUL)
+   ========================================= */
+header {
+    background-color: #0c7df0;
+    padding: 15px 20px;
+    color: white;
+}
+
+/* Linha de cima: Logo, Busca, Ícones */
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+/* Logo */
+.brand {
+    font-size: 22px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Barra de Pesquisa */
+.search-box {
+    flex-grow: 1;
+    margin: 0 15px;
+    position: relative;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 8px 15px 8px 35px; /* Espaço para lupa se tiver ícone */
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+/* Ícones do lado direito (Usuario/Carrinho) */
+.header-icons {
+    display: flex;
+    gap: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Linha de baixo: Menu de Categorias */
+.header-nav {
+    display: flex;
+    justify-content: space-between; /* Espalha os itens */
+    padding-top: 5px;
+}
+
+.header-nav span {
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* =========================================
+   3. TÍTULOS DA PÁGINA
+   ========================================= */
+.page-title {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.page-title h2 {
+    font-size: 24px;
+    color: #222;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.page-title p {
+    color: #444;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+/* =========================================
+   4. FORMULÁRIO
+   ========================================= */
+form {
+    width: 80%; /* O formulário ocupa 80% do container */
+    margin: 0 auto; /* Centraliza o formulário */
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* Labels (Textos acima dos inputs: CPF, Nome...) */
+.input-group label {
+    display: block;
+    font-size: 12px;
+    color: #333;
+    margin-bottom: 5px;
+    margin-left: 15px; /* Alinhamento visual com a borda arredondada */
+    font-weight: bold;
+}
+
+/* Campos de Texto Gerais */
+.input-group input[type="text"],
+.input-group input[type="email"],
+.input-group input[type="tel"] {
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 25px;
+    border: none;
+    background: #e6e3e3; /* Cinza claro */
+    outline: none;
+    font-size: 14px;
+    color: #333;
+}
+
+/* --- Layout de duas colunas (Data e Gênero) --- */
+.row-split {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.row-split .input-group {
+    width: 48%; /* Cada um ocupa quase metade */
+}
+
+/* =========================================
+   5. CHECKBOXES CUSTOMIZADOS
+   ========================================= */
+.checkbox-group {
+    display: flex;
+    align-items: flex-start; /* Alinha no topo caso o texto quebre linha */
+    margin-bottom: 15px;
+    font-size: 11px;
+    color: #333;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+/* O quadradinho do checkbox */
+.checkbox-group input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 3px solid #111; /* Borda grossa preta */
+    margin-right: 10px;
+    flex-shrink: 0; /* Impede o checkbox de amassar */
+    cursor: pointer;
+    position: relative;
+    top: -2px; /* Ajuste fino vertical */
+}
+
+/* Estado marcado (fundo preto) */
+.checkbox-group input[type="checkbox"]:checked {
+    background-color: #111;
+}

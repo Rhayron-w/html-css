@@ -1,0 +1,268 @@
+@charset "UTF-8";
+
+ /* --- Reset e Estilos Globais --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f0f2f5;
+            color: #333;
+        }
+
+        /* --- Variáveis de Cores --- */
+        :root {
+            --primary-blue: #007bff; /* Azul do topo */
+            --dark-blue: #003366;    /* Azul do rodapé */
+            --accent-orange: #ff6600; /* Detalhes */
+            --white: #ffffff;
+            --gray-light: #e9ecef;
+        }
+
+        /* --- Header --- */
+        header {
+            background-color: var(--primary-blue);
+            color: var(--white);
+            padding: 15px 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .header-icons {
+            display: flex;
+            gap: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* --- Área Principal do Produto (Topo) --- */
+        .product-main {
+            background: var(--white);
+            margin-top: 20px;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr; /* Imagem | Info | Card de Compra */
+            gap: 30px;
+        }
+
+        .product-image img {
+            width: 100%;
+            max-width: 250px;
+            border: 1px solid #eee;
+            border-radius: 10px;
+        }
+
+        .product-info h1 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #222;
+        }
+
+        .badge {
+            background-color: #eee;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            color: #555;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+
+        /* --- Card Lateral de Compra --- */
+        .buy-card {
+            border: 1px solid #eee;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: #fdfdfd;
+        }
+
+        .price-box {
+            margin-bottom: 20px;
+        }
+
+        .price-total {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .btn-buy {
+            width: 100%;
+            background-color: #2db3e6;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 25px;
+            font-weight: bold;
+            cursor: pointer;
+            margin: 15px 0;
+            transition: background 0.3s;
+        }
+
+        .btn-buy:hover {
+            background-color: #2390b8;
+        }
+
+        .benefits-list {
+            list-style: none;
+            font-size: 0.85rem;
+            color: #666;
+        }
+
+        .benefits-list li {
+            margin-bottom: 10px;
+            display: flex;
+            gap: 8px;
+        }
+
+        .benefits-list i {
+            color: #ff6b6b; /* Cor avermelhada dos checks */
+        }
+
+        /* --- Seção de Descontos (Carrossel) --- */
+        .recommendations {
+            margin: 40px 0;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            color: #222;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 15px;
+        }
+
+        .product-card {
+            background: var(--white);
+            padding: 15px;
+            border-radius: 8px;
+            position: relative;
+            transition: transform 0.2s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .discount-tag {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #007bff;
+            color: white;
+            font-size: 0.7rem;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+
+        .card-img {
+            width: 100%;
+            height: 120px;
+            object-fit: contain;
+            margin-bottom: 10px;
+        }
+
+        .card-title {
+            font-size: 0.9rem;
+            color: #555;
+            margin-bottom: 5px;
+            height: 40px; /* Altura fixa para alinhar */
+            overflow: hidden;
+        }
+
+        .rating {
+            color: #ffc107;
+            font-size: 0.8rem;
+            margin-bottom: 5px;
+        }
+
+        .old-price {
+            font-size: 0.8rem;
+            text-decoration: line-through;
+            color: #999;
+        }
+
+        .new-price {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* --- Footer --- */
+        footer {
+            background-color: var(--dark-blue);
+            color: white;
+            padding: 40px 0;
+            margin-top: 50px;
+        }
+
+        .footer-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+
+        .newsletter-input {
+            padding: 10px;
+            border-radius: 20px;
+            border: none;
+            width: 300px;
+        }
+
+        .footer-cols {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            font-size: 0.85rem;
+        }
+
+        .footer-cols h4 {
+            margin-bottom: 15px;
+        }
+
+        .footer-cols ul {
+            list-style: none;
+        }
+
+        .footer-cols li {
+            margin-bottom: 8px;
+            color: #ccc;
+        }
+        
+        .qr-code {
+            background: white;
+            padding: 5px;
+            width: 80px;
+        }
