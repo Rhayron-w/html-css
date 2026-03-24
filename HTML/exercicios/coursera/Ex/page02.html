@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav Bar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background-color: #2b2d42;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+        }
+            .container li {
+                list-style-type: none;
+            }
+
+            .container a {
+                display: inline-block;
+                padding: 25px;
+                margin: 0px 25px;
+                text-align: center;
+                text-decoration: none;
+                color: white;
+                transition: 0.5s;
+            }
+                .container a:hover {
+                    background-color: lightsteelblue;
+                }
+    </style>
+</head>
+<body>
+    <ul class="container">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Culinary Blog</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Contact Us</a></li>
+    </ul>
+</body>
+</html>
