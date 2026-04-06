@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap');
+
+:root {
+    --cor1: #8DC4AA;
+    --cor2: #4C9170;
+    --cor3: #DAF7E9;
+    --cor4: #1E5E3F;
+    --cor5: #06331D;
+    --black: #000000;
+    --white: #ffffff;
+    --font: "Roboto", sans-serif;
+    --fontTitle: "Goldman", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
+.forms {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    width: 500px;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 450px;
+    width: 400px;
+    margin: 40px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+
+}
+
+.box > label {
+    color: var(--cor4);
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+    font: normal bolder 1.3em var(--font), sans-serif;
+    margin-bottom: 10px;
+}
+
+input, select {
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.25);
+    border: 2px solid var(--cor4);
+    background-color: var(--cor3);
+    height: 40px;
+    width: 400px;
+    border-radius: 15px;
+    color: var(--cor5);
+    font-size: 1.05em;
+    text-indent: 10px;
+    
+}
+
+button {
+    justify-content: center;
+    align-self: center;
+    height: 40px;
+    width: 150px;
+    background-color: var(--cor5);
+    color: var(--cor3);
+    border-radius: 20px;
+    transition: button 0.2s ease;
+}
+    button:hover {
+        transform: scale(1.01);
+    }
