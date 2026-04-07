@@ -6,6 +6,8 @@ const elements = {
     checkbox: document.getElementById('mode'),
     body: document.querySelector('body'),
     footer: document.querySelector('footer'),
+    entrada: document.querySelector('select'),
+    salvar: document.querySelector('button'),
 
     backButton: document.querySelector('.back'),
     logo: document.querySelector('.Logo_D'),
@@ -23,6 +25,8 @@ const elements = {
 //Lista de elementos com o mesmo nome
 const links = document.querySelectorAll('.links')
 const creators = document.querySelectorAll('.github')
+const textForm = document.querySelectorAll('.texto')
+const entradas = document.querySelectorAll('input')
 
 //Função que verifica o tema atual do site
 function verifyTheme() {
@@ -73,16 +77,22 @@ function mudarTema(isDark) {
     if (elements.body) elements.body.classList.toggle('dark_body',isDark)
     if (elements.footer) elements.footer.classList.toggle('light_footer',isDark)
     if (elements.backButton) elements.backButton.classList.toggle('dark_back',isDark)
+    if (elements.entrada) elements.entrada.classList.toggle('enter_dark', isDark)
+    if (elements.salvar) elements.salvar.classList.toggle('button_dark')
     
     //Verifica se os links estão no modo escuro ou não
     if (isDark) {
         links.forEach(link => link.classList.add('link_dark'))
         creators.forEach(creator => creator.classList.add('git_dark'))
+        textForm.forEach(texto => texto.classList.add('texto_dark'))
+        entradas.forEach(enter => enter.classList.add('enter_dark'))
         //Chama as imagens de modo escuro
         darkMode()
     } else {
         links.forEach(link => link.classList.remove('link_dark'))
         creators.forEach(creator => creator.classList.remove('git_dark'))
+        textForm.forEach(texto => texto.classList.remove('texto_dark'))
+        entradas.forEach(enter => enter.classList.remove('enter_dark'))
         //Chama as imagens de modo claro
         lightMode()
     }

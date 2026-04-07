@@ -26,27 +26,30 @@
     <main class="forms">
     <form method="post">
         <article class="box">
-            <label>Produto</label>
-                <input list="produtos" name="produto_nome" placeholder="Digite o produto">
+            <label class="texto">Produto</label>
+                <input list="produtos" name="produto_nome" placeholder="Digite o produto" required>
             <datalist id="produtos">
                 <option value="{{ produto.nome }}">
             </datalist>
         </article>
         <article class="box">
-            <label>Vendedor</label>
+            <label class="texto">Vendedor</label>
             <select name="vendedor">
-                <option value="{{ vendedor.id }}">
+                <option value="{{ vendedor.id }}" aria-required="true">
                 </option>
             </select>
         </article>
         <article class="box">
-            <label>Quantidade</label>
-            <input type="number" name="quantidade" required>
+            <label class="texto">Quantidade</label>
+            <input type="number" name="quantidade"  min="1" max="99">
         </article>
 
         <button type="submit">Salvar Venda</button>
-        </form>   
+        </form>  
     </main>
+    <aside>
+        <a class="back" href="register.html">Voltar</a>
+    </aside>
     <footer>
         <p>&copy DataSales - Desenvolvido por <a class="github" href="https://github.com/felipepassos068" target="_blank">Felipe Passos</a> e <a class="github" href="https://github.com/Rhayron-w" target="_blank">Wdson Rhayron</a></p>
     </footer>

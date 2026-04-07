@@ -1,28 +1,5 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap');
-
-:root {
-    --cor1: #8DC4AA;
-    --cor2: #4C9170;
-    --cor3: #DAF7E9;
-    --cor4: #1E5E3F;
-    --cor5: #06331D;
-    --black: #000000;
-    --white: #ffffff;
-    --font: "Roboto", sans-serif;
-    --fontTitle: "Goldman", sans-serif;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: var(--font);
-}
-
 footer {
     background-color: var(--cor5);
     color: var(--cor3);
