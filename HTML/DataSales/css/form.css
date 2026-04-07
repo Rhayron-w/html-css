@@ -61,10 +61,10 @@ button {
     background-color: var(--cor1);
     color: var(--cor5);
     border-radius: 20px;
-    transition: button 0.2s ease;
+    transition: all 0.2s ease-in-out;
 }
     button:hover {
-        transform: scale(1.01);
+        transform: scale(1.05);
     }
 
 .button_dark {
