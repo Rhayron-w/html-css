@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+:root {
+    --cor1: #9AA7BD;
+    --cor2: #BBC7D8;
+    --cor3: #EAF4FF;
+    --cor4: #BBC6D8;
+    --font_pad: "Jersey 25", sans-serif;
+}
+
+footer {
+    background-color: var(--cor4);
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.links {
+    width: 110px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+aside > a {
+    color: white;
+    text-decoration: none;
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.35);
+}
+
+    aside > a:hover {
+        color: var(--cor3);
+    }
+
+.QrCode {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.Redes {
+    display: flex;
+    width: 220px;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.Redes > a {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 5px;
+    text-decoration: none;
+    color: black;
+    align-items: center;
+}
