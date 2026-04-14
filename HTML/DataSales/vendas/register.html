@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registros</title>
+    <link rel="shortcut icon" href="{% static 'img/financa-light.png' %}" type="image/png" media="(prefers-color-scheme: dark)">
+    <link rel="shortcut icon" href="{% static 'img/financa-dark.png' %}" type="image/png" media="(prefers-color-scheme: light)">
+    <link rel="stylesheet" href="{% static 'css/cabeca.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}" type="text/css">
+</head>
+<body>
+    <main class="principal">
+    <header>
+        <a href="{% url 'home' %}"><img class="Logo_D" src="../img/letra-d.png" alt="Logo DataSales" width="40px"></a>
+        <h1>DataSales</h1>
+        <div class="modo">
+            <img class="sol" src="{% static 'img/sun.png' %}" alt="sol" width="18px" height="18px">
+            <input type="checkbox" name="mode" id="mode">
+            <label for="mode" class="switch"></label>
+            <img class="lua" src="{% static 'img/lua-crescente.png' %}" alt="lua" width="18px" height="18px">
+        </div>
+    </header>
+    <main class="buttons">
+        <section>
+            <a href="register-product.html" class="links"><img class="regis" src="{% static 'img/registro.png' %}" alt="registrar produto" height="70px"><h2>REGISTRAR PRODUTO</h2></a>
+        </section>
+        <section>
+            <a href="register-venda.html" class="links"><img class="venda" src="{% static 'img/carrinho.png' %}" alt="registrar venda" height="70px"><h2>REGISTRAR VENDA</h2></a>
+        </section>
+    </main>
+        <aside>
+            <a class="back" href="{% url 'home' %}" target="_parent">Voltar</a>
+        </aside>
+    <footer>
+        <p>&copy DataSales - Desenvolvido por <a class="github" href="https://github.com/felipepassos068" target="_blank">Felipe Passos</a> e <a class="github" href="https://github.com/Rhayron-w" target="_blank">Wdson Rhayron</a></p>
+    </footer>
+    </main>
+    <script src="{% static 'js/scripts.js' %}"></script>
+</body>
+</html>
