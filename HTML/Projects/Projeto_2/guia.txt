@@ -1,0 +1,219 @@
+========================================
+        PROJETO_2 - FARMÁCIADIGI+
+========================================
+
+Sistema de cadastro de usuários desenvolvido
+com:
+
+- HTML
+- CSS
+- Java
+- SQLite
+
+========================================
+1. PROGRAMAS NECESSÁRIOS
+========================================
+
+Antes de executar o projeto, instale:
+
+✅ Java JDK 21 ou superior
+Download:
+https://adoptium.net/temurin/releases/
+
+✅ VS Code
+Download:
+https://code.visualstudio.com/
+
+✅ Extensão Java para VS Code
+
+Instalar no VS Code:
+- Extension Pack for Java
+
+✅ SQLite
+Pode usar:
+- DB Browser for SQLite
+
+Download:
+https://sqlitebrowser.org/dl/
+
+✅ Live Server (Extensão VS Code)
+
+Instalar no VS Code:
+- Live Server
+
+========================================
+2. ESTRUTURA DO PROJETO
+========================================
+
+A estrutura do projeto deve ficar assim:
+
+PROJETO_2/
+│
+├── lib/
+│   └── sqlite-jdbc-3.53.1.0.jar
+│
+├── bin/
+|
+├── src/
+│   ├── App.java
+│   ├── Conexao.java
+│
+|── banco.db
+|
+├── css/
+│
+├── img/
+│
+├── index.html
+│
+└── SignUp.html
+
+========================================
+3. DRIVER SQLITE JDBC
+========================================
+
+Baixar o arquivo:
+
+sqlite-jdbc-3.53.1.0.jar
+
+Link:
+https://github.com/xerial/sqlite-jdbc/releases
+
+Colocar o arquivo dentro da pasta:
+
+lib/
+
+========================================
+4. COMO EXECUTAR O PROJETO
+========================================
+
+PASSO 1
+
+Abrir a pasta PROJETO_2 no VS Code.
+
+========================================
+
+PASSO 2
+
+Abrir o terminal do VS Code.
+
+Atalho:
+
+Ctrl + '
+
+========================================
+
+PASSO 3
+
+Compilar o projeto:
+
+javac -cp "lib/sqlite-jdbc-3.53.1.0.jar" --add-modules jdk.httpserver src/*.java
+
+========================================
+
+PASSO 4
+
+Executar o servidor Java:
+
+java -cp "lib/sqlite-jdbc-3.53.1.0.jar;src" --add-modules jdk.httpserver App
+
+========================================
+
+PASSO 5
+
+Se tudo estiver correto aparecerá:
+
+Servidor rodando em http://localhost:8080
+
+========================================
+
+PASSO 6
+
+Abrir o arquivo HTML usando o Live Server.
+
+Botão direito no arquivo HTML:
+
+"Open with Live Server"
+
+========================================
+
+PASSO 7
+
+Cadastrar um usuário pelo formulário.
+
+========================================
+
+PASSO 8
+
+Os dados serão salvos automaticamente
+no banco SQLite.
+
+========================================
+5. COMO VER OS DADOS NO BANCO
+========================================
+
+Abrir o arquivo:
+
+banco.db
+
+usando:
+
+DB Browser for SQLite
+
+Executar:
+
+SELECT * FROM usuarios;
+
+========================================
+6. POSSÍVEIS ERROS
+========================================
+
+ERRO:
+
+ClassNotFoundException: org.sqlite.JDBC
+
+SOLUÇÃO:
+
+Verificar se o arquivo:
+
+sqlite-jdbc-3.53.1.0.jar
+
+está dentro da pasta:
+
+lib/
+
+========================================
+
+ERRO:
+
+no such table: usuarios
+
+SOLUÇÃO:
+
+Executar novamente o sistema para que
+a tabela seja criada automaticamente.
+
+========================================
+
+ERRO:
+
+porta 8080 já em uso
+
+SOLUÇÃO:
+
+Fechar outros programas utilizando
+a porta 8080 ou alterar a porta no
+arquivo App.java.
+
+========================================
+7. OBSERVAÇÕES
+========================================
+
+- O sistema cria a tabela automaticamente.
+- O banco SQLite é criado automaticamente.
+- As senhas atualmente são salvas sem criptografia.
+- Em projetos reais recomenda-se usar BCrypt.
+
+========================================
+        FIM DO GUIA
+========================================
