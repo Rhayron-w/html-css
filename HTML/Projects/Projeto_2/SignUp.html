@@ -21,14 +21,14 @@
     </header>
     <main class="formulario">
         <h1>Crie sua Conta na Digi+</h1>
-        <form method="post">
+        <form action="http://localhost:8080/cadastro" method="post">
             <input type="text" name="nome" id="nome" placeholder="Nome" required>
             <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" required>
             <h1>Data de Nascimento</h1>
             <input type="date" name="data-nasc" id="data-nasc" required>
             <input type="email" name="email" id="email" placeholder="E-mail" required>
             <input type="password" name="senha" id="senha" placeholder="Crie sua Senha" required>
-            <input type="password" name="confirm-senha" id="confirm-sneha" placeholder="Confirme sua Senha" required>
+            <input type="password" name="confirm-senha" id="confirm-senha" placeholder="Confirme sua Senha" required>
             <input type="tel" name="telefone" id="telefone" placeholder="Número" required>
             <button type="submit">Criar Conta</button> 
         </form>
