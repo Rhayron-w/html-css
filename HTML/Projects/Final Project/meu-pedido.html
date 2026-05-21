@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FarmáciaDigi+ — Meu Pedido</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/pedido.css" />
+</head>
+<body>
+
+  <header>
+    <div class="logo">FarmáciaDigi<span>+</span> ♡</div>
+    <div class="header-direita">
+      <input type="text" placeholder="" />
+      <div class="icone">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+        </svg>
+      </div>
+      <div class="icone icone-usuario">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+          <circle cx="12" cy="7" r="4"/>
+        </svg>
+        <span class="badge">J</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="saudacao">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#111">
+      <path d="M21.1 12.5L22.5 13.91L15.97 20.5L12.5 17L13.9 15.59L15.97 17.67L21.1 12.5M10 12A4 4 0 0 0 14 8A4 4 0 0 0 10 4A4 4 0 0 0 6 8A4 4 0 0 0 10 12M10 14C8.68 14 6.5 14.58 5.11 15.71C5.78 16.56 6 17 6 17H11.32C11.1 16.37 11 15.7 11 15C11 14.67 11.04 14.34 11.09 14.03C10.73 14.01 10.37 14 10 14Z"/>
+    </svg>
+    <div class="saudacao-texto">
+      Olá Let's Go
+      <small>R$ 0,00</small>
+    </div>
+  </div>
+
+  <main>
+
+    <h1>Meu Pedido</h1>
+
+    <div class="pedidos">
+
+      <div class="pedido-linha">
+        <div class="pedido-icone">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+          </svg>
+        </div>
+        <div class="pedido-card" data-preco="21.99">
+          <div class="pedido-topo">
+            <div class="pedido-img">
+              <img src="img/epocler.jpeg" width="70" height="48" style="border-radius:4px; object-fit:cover;" alt="Epocler">
+            </div>
+            <div class="pedido-total"><span>TOTAL R$</span> 21,99</div>
+          </div>
+          <div class="pedido-rodape">
+            <span class="pedido-id">PEDIDO 2321435</span>
+            <span class="status recebido">( PEDIDO RECEBIDO )</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="pedido-linha">
+        <div class="pedido-icone">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#e05050" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+          </svg>
+        </div>
+        <div class="pedido-card" data-preco="25.76" data-cancelado="true">
+          <div class="pedido-topo">
+            <div class="pedido-img">
+              <img src="img/novalgina.jpeg" width="70" height="48" style="border-radius:4px; object-fit:cover;" alt="Novalgina">
+            </div>
+            <div class="pedido-total"><span>TOTAL R$</span> 25,76</div>
+          </div>
+          <div class="pedido-rodape">
+            <span class="pedido-id">PEDIDO 2321435</span>
+            <span class="status cancelado">( PEDIDO CANCELADO )</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="pedido-linha">
+        <div class="pedido-icone">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+          </svg>
+        </div>
+        <div class="pedido-card" data-preco="39.38">
+          <div class="pedido-topo">
+            <div class="pedido-img">
+              <img src="img/neosaldina.jpeg" width="70" height="48" style="border-radius:4px; object-fit:cover;" alt="Neosaldina">
+            </div>
+            <div class="pedido-total"><span>TOTAL R$</span> 39,38</div>
+          </div>
+          <div class="pedido-rodape">
+            <span class="pedido-id">PEDIDO 2321435</span>
+            <span class="status recebido">( PEDIDO RECEBIDO )</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <h2>Total</h2>
+
+    <div class="total-card">
+      <p><span>SEU PEDIDO:</span> <span id="total-valor">0,00</span></p>
+    </div>
+
+    <button class="btn-pagamento">iR PARA PAGAMENTO</button>
+
+  </main>
+
+  <div class="newsletter">
+    <p>Se inscreva e não perca nenhuma novidade</p>
+    <div class="newsletter-campos">
+      <input type="text" placeholder="Digite seu nome" />
+      <input type="email" placeholder="EMAIL" />
+    </div>
+  </div>
+
+  <footer>
+    <div>
+      <div class="footer-links" style="margin-bottom: 14px;">
+        <strong>institutional</strong>
+        <a href="about.html">Quem somos</a>
+        <a href="#">Ações sociais</a>
+        <a href="#">Políticas de Privacidade</a>
+        <a href="#">Parceiros de entrega</a>
+      </div>
+      <div class="footer-links">
+        <a href="#">Central de ajuda</a>
+        <a href="#">Meus pedidos</a>
+        <a href="#">Minha Conta</a>
+        <a href="#">Dados pessoais</a>
+      </div>
+    </div>
+
+    <div class="footer-qr">
+      <svg viewBox="0 0 72 72" width="72" height="72" xmlns="http://www.w3.org/2000/svg">
+        <rect width="72" height="72" fill="#fff"/>
+        <rect x="4"  y="4"  width="22" height="22" rx="2" fill="#111"/>
+        <rect x="8"  y="8"  width="14" height="14" rx="1" fill="#fff"/>
+        <rect x="11" y="11" width="8"  height="8"  fill="#111"/>
+        <rect x="46" y="4"  width="22" height="22" rx="2" fill="#111"/>
+        <rect x="50" y="8"  width="14" height="14" rx="1" fill="#fff"/>
+        <rect x="53" y="11" width="8"  height="8"  fill="#111"/>
+        <rect x="4"  y="46" width="22" height="22" rx="2" fill="#111"/>
+        <rect x="8"  y="50" width="14" height="14" rx="1" fill="#fff"/>
+        <rect x="11" y="53" width="8"  height="8"  fill="#111"/>
+        <rect x="30" y="4"  width="4" height="4" fill="#111"/>
+        <rect x="36" y="4"  width="4" height="4" fill="#111"/>
+        <rect x="30" y="10" width="4" height="4" fill="#111"/>
+        <rect x="4"  y="30" width="4" height="4" fill="#111"/>
+        <rect x="10" y="30" width="4" height="4" fill="#111"/>
+        <rect x="4"  y="36" width="4" height="4" fill="#111"/>
+        <rect x="30" y="30" width="4" height="4" fill="#111"/>
+        <rect x="36" y="30" width="4" height="4" fill="#111"/>
+        <rect x="42" y="30" width="4" height="4" fill="#111"/>
+        <rect x="30" y="36" width="4" height="4" fill="#111"/>
+        <rect x="30" y="42" width="4" height="4" fill="#111"/>
+        <rect x="36" y="42" width="4" height="4" fill="#111"/>
+        <rect x="42" y="36" width="4" height="4" fill="#111"/>
+        <rect x="46" y="46" width="4" height="4" fill="#111"/>
+        <rect x="52" y="46" width="4" height="4" fill="#111"/>
+        <rect x="58" y="46" width="4" height="4" fill="#111"/>
+        <rect x="64" y="46" width="4" height="4" fill="#111"/>
+        <rect x="46" y="52" width="4" height="4" fill="#111"/>
+        <rect x="58" y="52" width="4" height="4" fill="#111"/>
+        <rect x="46" y="58" width="4" height="4" fill="#111"/>
+        <rect x="52" y="58" width="4" height="4" fill="#111"/>
+        <rect x="64" y="58" width="4" height="4" fill="#111"/>
+        <rect x="46" y="64" width="4" height="4" fill="#111"/>
+        <rect x="64" y="64" width="4" height="4" fill="#111"/>
+      </svg>
+    </div>
+
+    <div class="footer-social">
+      <div class="footer-social-linha">
+        <a href="#" title="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+          </svg>
+        </a>
+        <a href="#" title="WhatsApp">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+          </svg>
+        </a>
+      </div>
+      <a href="#" title="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+          <rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>
+        </svg>
+      </a>
+    </div>
+
+    <div class="footer-copy">Todos os direitos reservados ©</div>
+  </footer>
+
+  <script src="js/pedido.js"></script>
+
+</body>
+</html>
