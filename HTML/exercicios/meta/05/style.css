@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.clock {
+    display: flex;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background-color: black;
+    border-radius: 50%; 
+}
+
+.sec {
+   animation: cycle 60s infinite steps(60, end); 
+   background-color: red;
+   position: absolute;
+   top: 10%;
+   left: 50%;
+   transform: translateX(-50%);
+   width: 2px;
+   height: 100px;
+   transform-origin: bottom center;
+}
+
+.minutes{
+    animation: cycle 3600s infinite linear;
+    background-color: white;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5px;
+    height: 100px;
+    transform-origin: bottom center;
+}
+
+.hours {
+    animation: cycle 43200s infinite linear;
+    background-color: white;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5px;
+    height: 62.5px;
+    transform-origin: bottom center;
+}
+
+@keyframes cycle {
+    from {transform: translateX(-50%) rotate(0deg);}  
+    to {transform: translateX(-50%) rotate(360deg);}
+}
